@@ -10,7 +10,7 @@ public class BMISuggestion {
         System.out.print("Please enter your weight (kg): ");
         float weight = scanner.nextFloat();
 
-        float bmi = weight / (height * 2f);
+        float bmi = weight / (height * 2);
         System.out.println("Your BMI index is " + bmi);
 
         float incWeight = (18.5f * (height * 2)) - weight;
