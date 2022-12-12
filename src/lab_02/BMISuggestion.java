@@ -6,15 +6,15 @@ public class BMISuggestion {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter your height (m): ");
-        double height = scanner.nextDouble();
+        float height = scanner.nextFloat();
         System.out.print("Please enter your weight (kg): ");
-        double weight = scanner.nextDouble();
+        float weight = scanner.nextFloat();
 
-        double bmi = weight / (height * 2);
+        float bmi = weight / (height * 2f);
         System.out.println("Your BMI index is " + bmi);
 
-        double incWeight = (18.5 * (height * 2)) - weight;
-        double decWeight = weight - (24.9 * (height * 2));
+        float incWeight = (18.5f * (height * 2)) - weight;
+        float decWeight = weight - (24.9f * (height * 2));
 
         if(bmi < 18.5) {
             System.out.println("Oops! You are underweight! Let's eat more");

@@ -11,7 +11,6 @@ public class BMICalculation {
         float weight = scanner.nextFloat();
 
         float bmi = weight / (height * 2);
-        System.out.println("Your BMI index is " + bmi);
 
         if(bmi < 18.5) {
             System.out.println("Oops! You are underweight! Let's eat more");
